@@ -1,0 +1,15 @@
+void setup() 
+{
+    DDRD = B11111111; //Set D0-D7 as outputs\
+    DDRB = B00111111; //Set D8-D13 as outputs
+}
+
+void loop() 
+{
+  PORTD = B11111111;  // pins D8-D13 high
+  PORTB = B11111111;  // pins D8-D13 high
+    delay(500);
+  PORTD = B00000000;  // pins D8-D13 low
+  PORTB = B00000000;  // pins D8-D13 low
+  delay(500);
+}
