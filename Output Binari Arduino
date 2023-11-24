@@ -1,6 +1,7 @@
 void setup() 
 {
-    DDRD = B11111111; //Set D0-D7 as outputs\
+    // Arduino UNO
+    DDRD = B11111111; //Set D0-D7 as outputs
     DDRB = B00111111; //Set D8-D13 as outputs
 }
 
